@@ -32,7 +32,7 @@ class SinhVienController {
             $this->sinhVienModel->MaNganh = $_POST['MaNganh'];
 
             if (!empty($_FILES['Hinh']['name'])) {
-                $targetDir = "public/content/"; // Thư mục lưu ảnh
+                $targetDir = "public/content/images/"; // Thư mục lưu ảnh
                 $fileName = time() . "_" . basename($_FILES["Hinh"]["name"]); // Đổi tên file tránh trùng lặp
                 $targetFilePath = $targetDir . $fileName; // Đường dẫn đầy đủ
                 $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
@@ -117,7 +117,7 @@ class SinhVienController {
             $this->sinhVienModel->MaNganh = $_POST['MaNganh'];
 
             if (!empty($_FILES['Hinh']['name'])) {
-                $targetDir = "public/content/"; // Thư mục lưu ảnh
+                $targetDir = "public/content/images/"; // Thư mục lưu ảnh
                 $fileName = time() . "_" . basename($_FILES["Hinh"]["name"]); // Đổi tên file tránh trùng lặp
                 $targetFilePath = $targetDir . $fileName; // Đường dẫn đầy đủ
                 $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
